@@ -66,17 +66,26 @@ describe('Testing morseToEnglish', () => {
 })
 
 // #9
-xdescribe('Testing englishToMorse', () => {
-  it("2 should be 2", ()=> {
-    expect().toBe()
+describe('Testing morseToEnglish', () => {
+  it("'.... . .-.. .-.. --- - .... . .-. .' should be 'HELLO THERE'", ()=> {
+    expect(morseToEnglish('.... . .-.. .-.. --- - .... . .-. .')).toBe("HELLOTHERE")
   })
 
 })
 
 // #10
-xdescribe('Testing englishToMorse', () => {
-  it("2 should be 2", ()=> {
-    expect().toBe()
+describe('Testing morseToEnglish', () => {
+  it("'.....' should be '5'", ()=> {
+    expect(morseToEnglish(".....")).toBe("5")
   })
 
 })
+
+// #11
+describe('Testing morseToEnglish', () => {
+  it("'----- ....- ...--' should be '043'", ()=> {
+    expect(morseToEnglish("----- ....- ...--")).toBe("043")
+  })
+
+})
+

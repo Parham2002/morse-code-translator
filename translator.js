@@ -171,5 +171,5 @@ export const morseToEnglish = (input) => {
         }
 
     })
-    return translatedText.join(" ")
+    return translatedText.join("")
 }
