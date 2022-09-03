@@ -3,7 +3,7 @@ import { translateToMorse } from "./translator";
 // #1
 describe('Testing translateToMorse', () => {
   it("'A' should be '.-'", ()=> {
-    expect().toBe()
+    expect("a").toBe(",-")
   })
 
 })
