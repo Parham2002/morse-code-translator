@@ -1,4 +1,4 @@
-export const engMorseDictionary = [
+const engMorseDictionary = [
     {
         english: "A",
         morse: ".-"
@@ -146,13 +146,27 @@ export const engMorseDictionary = [
 
 ]
 
-export const translateToMorse = (input) => {
+export const englishToMorse = (input) => {
     let translatedText = [];
     let inputList = input.split("")
     inputList.forEach((character) => {
         for (let i=0;i<engMorseDictionary.length;i++) {
             if (engMorseDictionary[i].english == character.toUpperCase()) {
                 translatedText.push(engMorseDictionary[i].morse)
+            }
+        }
+
+    })
+    return translatedText.join(" ")
+}
+
+export const morseToEnglish = (input) => {
+    let translatedText = [];
+    let inputList = input.split(" ")
+    inputList.forEach((character) => {
+        for (let i=0;i<engMorseDictionary.length;i++) {
+            if (engMorseDictionary[i].morse == character) {
+                translatedText.push(engMorseDictionary[i].english)
             }
         }
 

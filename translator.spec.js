@@ -1,71 +1,72 @@
-import { translateToMorse } from "./translator.js";
+import { englishToMorse } from "./translator.js";
+import { morseToEnglish } from "./translator.js"
 
 // #1
-describe('Testing translateToMorse', () => {
+describe('Testing englishToMorse', () => {
   it("'A' should be '.-'", ()=> {
-    expect(translateToMorse("a")).toBe(".-")
+    expect(englishToMorse("a")).toBe(".-")
   })
 
 })
 
 // #2
-describe('Testing translateToMorse', () => {
+describe('Testing englishToMorse', () => {
   it("'hello' should be '.... . .-.. .-.. ---'", ()=> {
-    expect(translateToMorse("hello")).toBe(".... . .-.. .-.. ---")
+    expect(englishToMorse("hello")).toBe(".... . .-.. .-.. ---")
   })
 
 })
 
 // #3
-xdescribe('Testing translateToMorse', () => {
-  it("2 should be 2", ()=> {
-    expect().toBe()
+describe('Testing englishToMorse', () => {
+  it("'hElLo' should be '.... . .-.. .-.. ---'", ()=> {
+    expect(englishToMorse("hElLo")).toBe(".... . .-.. .-.. ---")
   })
 
 })
 
 // #4
-xdescribe('Testing translateToMorse', () => {
-  it("2 should be 2", ()=> {
-    expect().toBe()
+describe('Testing englishToMorse', () => {
+  it("'hello there' should be '.... . .-.. .-.. --- - .... . .-. .'", ()=> {
+    expect(englishToMorse("hello there")).toBe(".... . .-.. .-.. --- - .... . .-. .")
   })
 
 })
 
 // #5
-xdescribe('Testing translateToMorse', () => {
-  it("2 should be 2", ()=> {
-    expect().toBe()
+describe('Testing englishToMorse', () => {
+  it("'1' should be '.----'", ()=> {
+    expect(englishToMorse("1")).toBe(".----")
   })
 
 })
 
 // #6
-xdescribe('Testing translateToMorse', () => {
-  it("2 should be 2", ()=> {
-    expect().toBe()
+describe('Testing englishToMorse', () => {
+  it("'34' should be '...-- ....-'", ()=> {
+    expect(englishToMorse("34")).toBe("...-- ....-")
   })
 
 })
 
 // #7
-xdescribe('Testing translateToMorse', () => {
-  it("2 should be 2", ()=> {
-    expect().toBe()
+describe('Testing morseToEnglish', () => {
+  it("'.-' should be 'A'", ()=> {
+    expect(morseToEnglish(".-")).toBe("A")
   })
 
 })
 
 // #8
-xdescribe('Testing translateToMorse', () => {
-  it("2 should be 2", ()=> {
-    expect().toBe()
+describe('Testing morseToEnglish', () => {
+  it("'.... . .-.. .-.. ---' should be 'HELLO'", ()=> {
+    expect(morseToEnglish(".... . .-.. .-.. ---")).toBe("HELLO")
   })
 
 })
 
 // #9
-xdescribe('Testing translateToMorse', () => {
+xdescribe('Testing englishToMorse', () => {
   it("2 should be 2", ()=> {
     expect().toBe()
   })
@@ -73,7 +74,7 @@ xdescribe('Testing translateToMorse', () => {
 })
 
 // #10
-xdescribe('Testing translateToMorse', () => {
+xdescribe('Testing englishToMorse', () => {
   it("2 should be 2", ()=> {
     expect().toBe()
   })
