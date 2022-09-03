@@ -12,7 +12,14 @@
     </header>
     <main>
         <textarea class="input-box" cols="30" rows="5"></textarea>
-        <button class="submit-button">Translate</button>
+            <label class="switch">
+                <input type="checkbox" id="button-one" onclick="translateToggle()">
+                To Morse
+                <input type="checkbox" id="button-two" onclick="translateToggle()">
+                To English
+            </label>
+            <button class="submit-button" disabled="true">Translate</button>
+        </form>
         <textarea class="output-box" cols="30" rows="5"></textarea>
         <script src="main.js"></script>
     </main>

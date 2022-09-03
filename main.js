@@ -146,9 +146,11 @@ const engMorseDictionary = [
 
 ]
 
-let userInput = document.querySelector(".input-box")
-const submitButton = document.querySelector(".submit-button")
-let systemOutput = document.querySelector(".output-box")
+let userInput = document.querySelector(".input-box");
+const submitButton = document.querySelector(".submit-button");
+let systemOutput = document.querySelector(".output-box");
+let buttonOne = document.querySelector("#button-one");
+let buttonTwo = document.querySelector("#button-two");
 let inputList= [];
 let translatedText = [];
 
@@ -171,19 +173,33 @@ const englishToMorse = () => {
 
 
 const morseToEnglish = () => {
-    systemOutput.value = "";
-    translatedText = [];
-    inputList = input.split(" ")
-    inputList.forEach((character) => {
-        for (let i=0;i<engMorseDictionary.length;i++) {
-            if (engMorseDictionary[i].morse == character) {
-                translatedText.push(engMorseDictionary[i].english)
+    submitButton.addEventListener("click", () => {
+        systemOutput.value = "";
+        translatedText = [];
+        inputList = userInput.value.split(" ")
+        inputList.forEach((character) => {
+            for (let i=0;i<engMorseDictionary.length;i++) {
+                if (engMorseDictionary[i].morse == character) {
+                    translatedText.push(engMorseDictionary[i].english)
+                }
             }
-        }
-
+            systemOutput.value = translatedText.join("")
+        })
     })
-    return translatedText.join("")
 }
 
-englishToMorse()
-morseToEnglish()
+const translateToggle = () => {
+    if (buttonOne.checked && !buttonTwo.checked) {
+        englishToMorse()
+        submitButton.removeAttribute("disabled")
+    } else if (buttonTwo.checked && !buttonOne.checked){
+        morseToEnglish()
+        submitButton.removeAttribute("disabled")
+    } else {
+        submitButton.disabled = "true"
+    }
+
+}
+
+
+translateToggle()
