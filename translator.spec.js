@@ -1,9 +1,9 @@
-import { translateToMorse } from "./translator";
+import { translateToMorse } from "./translator.js";
 
 // #1
 describe('Testing translateToMorse', () => {
   it("'A' should be '.-'", ()=> {
-    expect("a").toBe(",-")
+    expect(translateToMorse("a")).toBe(".-")
   })
 
 })
@@ -11,13 +11,13 @@ describe('Testing translateToMorse', () => {
 // #2
 describe('Testing translateToMorse', () => {
   it("'hello' should be '.... . .-.. .-.. ---'", ()=> {
-    expect().toBe()
+    expect(translateToMorse("hello")).toBe(".... . .-.. .-.. ---")
   })
 
 })
 
 // #3
-describe('Testing translateToMorse', () => {
+xdescribe('Testing translateToMorse', () => {
   it("2 should be 2", ()=> {
     expect().toBe()
   })
@@ -25,7 +25,7 @@ describe('Testing translateToMorse', () => {
 })
 
 // #4
-describe('Testing translateToMorse', () => {
+xdescribe('Testing translateToMorse', () => {
   it("2 should be 2", ()=> {
     expect().toBe()
   })
@@ -33,7 +33,7 @@ describe('Testing translateToMorse', () => {
 })
 
 // #5
-describe('Testing translateToMorse', () => {
+xdescribe('Testing translateToMorse', () => {
   it("2 should be 2", ()=> {
     expect().toBe()
   })
@@ -41,7 +41,7 @@ describe('Testing translateToMorse', () => {
 })
 
 // #6
-describe('Testing translateToMorse', () => {
+xdescribe('Testing translateToMorse', () => {
   it("2 should be 2", ()=> {
     expect().toBe()
   })
@@ -49,7 +49,7 @@ describe('Testing translateToMorse', () => {
 })
 
 // #7
-describe('Testing translateToMorse', () => {
+xdescribe('Testing translateToMorse', () => {
   it("2 should be 2", ()=> {
     expect().toBe()
   })
@@ -57,7 +57,7 @@ describe('Testing translateToMorse', () => {
 })
 
 // #8
-describe('Testing translateToMorse', () => {
+xdescribe('Testing translateToMorse', () => {
   it("2 should be 2", ()=> {
     expect().toBe()
   })
@@ -65,7 +65,7 @@ describe('Testing translateToMorse', () => {
 })
 
 // #9
-describe('Testing translateToMorse', () => {
+xdescribe('Testing translateToMorse', () => {
   it("2 should be 2", ()=> {
     expect().toBe()
   })
@@ -73,7 +73,7 @@ describe('Testing translateToMorse', () => {
 })
 
 // #10
-describe('Testing translateToMorse', () => {
+xdescribe('Testing translateToMorse', () => {
   it("2 should be 2", ()=> {
     expect().toBe()
   })

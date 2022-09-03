@@ -1,4 +1,4 @@
-const engMorseDictionary = [
+export const engMorseDictionary = [
     {
         english: "A",
         morse: ".-"
@@ -145,26 +145,17 @@ const engMorseDictionary = [
     },
 
 ]
-let userInput = document.querySelector(".input-box")
-const submitButton = document.querySelector(".submit-button")
-let systemOutput = document.querySelector(".output-box")
-let inputList= [];
-let translatedText = [];
 
-const translateToMorse = () => {
-    submitButton.addEventListener("click", () => {
-        systemOutput.value = "";
-        translatedText = [];
-        inputList = userInput.value.split("")
-        inputList.forEach((character) => {
-            for (i=0;i<engMorseDictionary.length;i++) {
-                if (engMorseDictionary[i].english == character.toUpperCase()) {
-                    translatedText.push(engMorseDictionary[i].morse)
-                }
+export const translateToMorse = (input) => {
+    let translatedText = [];
+    let inputList = input.split("")
+    inputList.forEach((character) => {
+        for (let i=0;i<engMorseDictionary.length;i++) {
+            if (engMorseDictionary[i].english == character.toUpperCase()) {
+                translatedText.push(engMorseDictionary[i].morse)
             }
-            systemOutput.value = translatedText.join(" ")
-            
-        })
+        }
+
     })
+    return translatedText.join(" ")
 }
-translateToMorse()
