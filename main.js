@@ -200,6 +200,4 @@ const translateToggle = () => {
     }
 
 }
-
-
 translateToggle()
