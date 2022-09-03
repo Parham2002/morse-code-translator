@@ -145,7 +145,23 @@ const engMorseDictionary = [
     },
 
 ]
-const userInput = document.querySelector(".input")
-export const translateToMorse = () => {
-    
+let userInput = document.querySelector(".input-box")
+const submitButton = document.querySelector(".submit-button")
+let systemOutput = document.querySelector(".output-box")
+let inputList= [];
+
+const translateToMorse = () => {
+    submitButton.addEventListener("click", () => {
+        systemOutput.value = "";
+        inputList = userInput.value.split("")
+        inputList.forEach((character) => {
+            for (i=0;i<engMorseDictionary.length;i++) {
+                if (engMorseDictionary[i].english == character.toUpperCase()) {
+                    systemOutput.value += engMorseDictionary[i].morse
+                }
+            }
+            
+        })
+    })
 }
+translateToMorse()
