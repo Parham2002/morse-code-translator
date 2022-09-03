@@ -61,7 +61,7 @@ const engMorseDictionary = [
     },
     {
         english: "P",
-        morse: "--"
+        morse: ".--."
     },
     {
         english: "Q",

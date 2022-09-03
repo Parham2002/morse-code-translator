@@ -47,7 +47,7 @@ var engMorseDictionary = [{
   morse: "---"
 }, {
   english: "P",
-  morse: "--"
+  morse: ".--."
 }, {
   english: "Q",
   morse: "--.-"

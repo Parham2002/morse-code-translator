@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+body {
+  background-color: black;
+}
+
 .container {
   width: 800px;
   height: 300px;
@@ -12,14 +16,18 @@
   transform: translate(-50%, -50%);
   border: 2px solid black;
   text-align: center;
+  background-color: gray;
 }
 .container .switch {
   display: inline;
   position: relative;
-  bottom: 40px;
+  bottom: 100px;
   left: 25px;
 }
 .container .submit-button {
   position: relative;
-  right: 85px;
+  right: 90px;
+}
+.container textarea {
+  background-color: lightgray;
 }
