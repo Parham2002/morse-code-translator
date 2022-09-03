@@ -8,20 +8,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <main class="container">
         <h1>Morse-Code Translator</h1>
-    </header>
-    <main>
-        <textarea class="input-box" cols="30" rows="5"></textarea>
-            <label class="switch">
+        <textarea class="input-box" cols="30" rows="10"></textarea>
+            <div class="switch">
                 <input type="checkbox" id="button-one" onclick="translateToggle()">
                 To Morse
                 <input type="checkbox" id="button-two" onclick="translateToggle()">
                 To English
-            </label>
+            </div>
             <button class="submit-button" disabled="true">Translate</button>
-        </form>
-        <textarea class="output-box" cols="30" rows="5"></textarea>
+        <textarea class="output-box" cols="30" rows="10"></textarea>
         <script src="main.js"></script>
     </main>
 </body>

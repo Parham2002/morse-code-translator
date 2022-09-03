@@ -2,3 +2,24 @@
   padding: 0px;
   margin: 0px;
 }
+
+.container {
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  text-align: center;
+}
+.container .switch {
+  display: inline;
+  position: relative;
+  bottom: 40px;
+  left: 25px;
+}
+.container .submit-button {
+  position: relative;
+  right: 85px;
+}
