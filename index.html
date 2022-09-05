@@ -11,12 +11,14 @@
     <main class="container">
         <h1>Morse-Code Translator</h1>
         <textarea class="input-box" cols="30" rows="12"></textarea>
-            <div class="switch">
+            <label class="label">
                 <input type="checkbox" id="button-one" onclick="translateToggle()">
                 To Morse
+            </label>
+            <label class="label">
                 <input type="checkbox" id="button-two" onclick="translateToggle()">
                 To English
-            </div>
+            </label>
             <button class="submit-button" disabled="true">Translate</button>
         <textarea class="output-box" cols="30" rows="12"></textarea>
         <script src="main.js"></script>

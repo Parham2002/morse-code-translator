@@ -18,16 +18,32 @@ body {
   text-align: center;
   background-color: gray;
 }
-.container .switch {
-  display: inline;
+.container .label {
   position: relative;
   bottom: 100px;
-  left: 25px;
+  background-color: #fff;
+  border: 1px solid #666;
+  color: #000;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
 }
 .container .submit-button {
-  position: relative;
-  right: 90px;
+  position: absolute;
+  right: 315px;
+  top: 190px;
+  width: 170px;
+  height: 50px;
+  font-size: 30px;
+  cursor: pointer;
 }
 .container textarea {
   background-color: lightgray;
+  position: relative;
+  top: 25px;
+}
+.container h1 {
+  position: relative;
+  top: 10px;
 }
