@@ -1,6 +1,8 @@
 "use strict";
 
-var engMorseDictionary = [{
+var engMorseDictionary = [{// english: " ",
+  // morse: "/",
+}, {
   english: "A",
   morse: ".-"
 }, {

@@ -3,7 +3,6 @@ This is my morse-code-translator project. There's a text box to the left where y
 I have used multiple tools and methods to create this project, including but no limited to: Javascript, HTML, SCSS, CSS, Jest, lists, functions, objects, and DOM.
 
 If I were to improve this project, I would:
-1. Add spaces between translated English words
-2. Improve the toggle functionality
-3. Add more CSS to improve aesthetics
-4. Compartmentalise the code into different files
+1. Improve the toggle functionality
+2. Add more CSS to improve aesthetics
+3. Compartmentalise the code into different files

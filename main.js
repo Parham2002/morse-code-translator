@@ -1,5 +1,9 @@
 const engMorseDictionary = [
     {
+        english: " ",
+        morse: "/",
+    },
+    {
         english: "A",
         morse: ".-"
     },
