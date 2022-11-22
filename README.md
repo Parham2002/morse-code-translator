@@ -20,5 +20,6 @@ Technologies and methods used:
 - Objects
 - DOM
 
-![Screenshot (6)](https://user-images.githubusercontent.com/98832011/203288838-81a15297-826e-4611-b39c-45ab29ed6ac2.png)
-![Screenshot (7)](https://user-images.githubusercontent.com/98832011/203288855-b45f756c-7d90-4573-96b8-4012f777a001.png)
+
+![Screenshot (6)](https://user-images.githubusercontent.com/98832011/203291916-a21caab7-7621-455f-8692-56e15414d39f.png)
+![Screenshot (7)](https://user-images.githubusercontent.com/98832011/203291942-01b3b12b-8599-459a-917b-d9c7c3f7616d.png)
